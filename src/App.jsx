@@ -2,6 +2,7 @@ import { Container, Paper } from '@mui/material'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import CalculadoraSimple from './components/CalculadoraSimple'
+import CalculadoraCompleta from './components/CalculadoraCompleta'
 import './App.css'
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/simple" element={<CalculadoraSimple />} />
+            <Route path="/completa" element={<CalculadoraCompleta />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Paper>

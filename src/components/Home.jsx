@@ -16,6 +16,9 @@ function Home() {
         <Button variant="contained" size="large" onClick={() => navigate('/simple')}>
           Calculadora Simple
         </Button>
+        <Button variant="contained" size="large" onClick={() => navigate('/completa')}>
+          Calculadora Completa
+        </Button>
       </Stack>
     </Stack>
   )
