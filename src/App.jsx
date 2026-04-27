@@ -3,6 +3,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
 import CalculadoraSimple from './components/CalculadoraSimple'
 import CalculadoraCompleta from './components/CalculadoraCompleta'
+import CatalogPage from './pages/CatalogPage'
+import CharacterDetailPage from './pages/CharacterDetailPage'
 import './App.css'
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/simple" element={<CalculadoraSimple />} />
             <Route path="/completa" element={<CalculadoraCompleta />} />
+            <Route path="/catalogo" element={<CatalogPage />} />
+            <Route path="/catalogo/:id" element={<CharacterDetailPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Paper>

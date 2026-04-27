@@ -19,6 +19,9 @@ function Home() {
         <Button variant="contained" size="large" onClick={() => navigate('/completa')}>
           Calculadora Completa
         </Button>
+        <Button variant="outlined" size="large" onClick={() => navigate('/catalogo')}>
+          Catalogo Rick & Morty
+        </Button>
       </Stack>
     </Stack>
   )
