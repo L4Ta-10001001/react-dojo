@@ -7,20 +7,17 @@ function Home() {
   return (
     <Stack spacing={3} alignItems="center" className="home">
       <Typography variant="h3" component="h1" textAlign="center">
-        React Dojo
+        Erik Herrera
       </Typography>
       <Typography variant="body1" color="text.secondary" textAlign="center">
-        Selecciona una experiencia:
+        Selecciona una herramienta:
       </Typography>
       <Stack spacing={1.5} width="100%" maxWidth={440}>
-        <Button variant="contained" size="large" onClick={() => navigate('/simple')}>
-          Calculadora Simple
-        </Button>
         <Button variant="contained" size="large" onClick={() => navigate('/completa')}>
-          Calculadora Completa
+          Calculadora
         </Button>
-        <Button variant="outlined" size="large" onClick={() => navigate('/catalogo')}>
-          Catalogo Rick & Morty
+        <Button variant="contained" size="large" onClick={() => navigate('/todo')}>
+          ToDo List
         </Button>
       </Stack>
     </Stack>
